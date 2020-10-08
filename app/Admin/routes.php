@@ -13,7 +13,7 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
    // $router->get('/dashboard', 'dashboardController@index')->name('dashboard');
-    $router->get('/getCustomerData', 'HomeController@getchartsData')->name("Home.getchartsData");
+    $router->get('/chartsData', 'HomeController@chartsData')->name("home.chartsData");
 
     //$router->resource('/admin/dashboard',dashboardController::class);
 
