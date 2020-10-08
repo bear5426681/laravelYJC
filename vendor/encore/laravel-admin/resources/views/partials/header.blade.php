@@ -25,7 +25,7 @@
             <ul class="nav navbar-nav">
                 <li>
                     <a href="javascript:void(0);" class="container-refresh">
-                        <span class="h4">當前雞隻：10023隻</span>
+                        <b style="font-size: 14px">當前雞隻：10023隻</b>
 {{--                        <i class="fa fa-refresh"></i>這個長這樣{!! Admin::getNavbar()->render() !!}這個長這樣--}}
                     </a>
                 </li>

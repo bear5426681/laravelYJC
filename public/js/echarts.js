@@ -1,3 +1,45 @@
+
+// function getMessage(){
+//     $.ajax({
+//         type: "post",
+//         async: false, //同步执行
+//         url: './getchartsData',
+//         dataType: "json", //返回数据形式为json
+//         success: function(result) {
+//             //temChart.hideLoading(); //隐藏加载动画
+//             temChart.setOption({ //渲染数据
+//                 series: [{
+//                     // 根据名字对应到相应的系列
+//                     data: [{ value:result, name: '氣溫' }],
+//
+//                 }]
+//             });
+//         },
+//         error: function() {
+//             alert("请求数据失败!");
+//         }
+//     });
+// }
+//
+//
+// ajaxGetPostMonthlyData: function() {
+//     var urlPath =  'http://' + window.location.hostname + '/get-post-chart-data';
+//     var request = $.ajax( {
+//         method: 'GET',
+//         cache: false,
+//         url: urlPath
+//     } );
+//
+//     request.done( function ( response ) {
+//         console.log( response );
+//
+//
+//
+//     });
+// };
+
+
+
 //<溫度>
 var temChart = echarts.init(document.getElementById('main'));
 // 指定图表的配置项和数据
@@ -13,7 +55,7 @@ option1 = {
     },
     series: [
         {
-            name: '現在溫度',
+            name:'氣體偵測',
             type: 'gauge',
             axisLine: {
 
@@ -26,9 +68,10 @@ option1 = {
                 },
             },
             detail: { formatter: '{value}℃' },
-            data: [{ value: 20, name: '氣溫' }],
+            data: [{ value: 27.5, name: '氣溫' }],
             max: 44,
-            min: 4
+            min: 4,
+            center: ["50%", "55%"],
         },
         // radius: '80%',
         // center: ["50%", "65%"],
@@ -37,10 +80,10 @@ option1 = {
         //  endAngle: 0,
     ]
 };
-setInterval(function () {
-    option1.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
-    temChart.setOption(option1, true);
-}, 2000);
+// setInterval(function () {
+//     option1.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+//     temChart.setOption(option1, true);
+// }, 2000);
 temChart.setOption(option1);
 //</溫度>
 
@@ -51,12 +94,12 @@ option_wet = {
     tooltip: {
         formatter: '{a} <br/>{b} : {c}%'
     },
-    toolbox: {
-        feature: {
-            // restore: { show: true, title: "restore", },
-            // saveAsImage: { show: true, title: "Save as Image", },
-        }
-    },
+    // toolbox: {
+    //     feature: {
+    //         // restore: { show: true, title: "restore", },
+    //         // saveAsImage: { show: true, title: "Save as Image", },
+    //     }
+    // },
     series: [
         {
             name: '現在濕度',
@@ -65,16 +108,19 @@ option_wet = {
 
                 lineStyle: {
                     color: [
-                        [0.7, "	#FFAA33"],
+
+                        [0.7, "#FFAA33"],
                         [1, "#4682b4"],
                     ],
                 },
             },
-            detail: { formatter: '{value}%' },
-            data: [{ value: 20, name: ' 濕度' }],
+            detail: { formatter: '{value}%' ,
+                offsetCenter: [10, "30%"]},
+            data: [{ value: 30, name: ' 濕度' }],
             startAngle: 180,
             endAngle: 0,
             radius: "90%",
+            center: ["50%", "70%"],
         },
         // radius: '80%',
         // center: ["50%", "65%"],
@@ -91,13 +137,14 @@ wetChart.setOption(option_wet);
 var windChart = echarts.init(document.getElementById('wind'));
 option_wind = {
     title: {
-        text: '風立風向',
+        text: '風力風向',
         subtext: '風向：342°  風力：0m/s',
         left: 'center'
     },
     angleAxis: {
 
         type: 'category',
+        center: ['25%', '50%'],
         data: ['北', '', 'NE', '', '東', '', 'SE', '', '南', '', 'SW', '', '西', '', 'NW', ''],
         z: 0,
         boundaryGap: false,
@@ -117,11 +164,12 @@ option_wind = {
     },
     //圓內外圈大小
     polar: {
-        radius: ["0%", "50%"]
+        radius: ["0%", "60%"],
+        center: ["50%", "56%"],
     },
     series: [{
         type: 'bar',
-        data: [0, 0, 0, 0, 0.62, 1.22, 1.61, 2.04, 2.66, 2.96, 2.53, 1.97, 1.64, 1.32, 1.58, 1.51],
+        data: [0, 0, 0, 0, 0.62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         coordinateSystem: 'polar',
         name: '<0.5m/s',
         stack: 'a',
@@ -155,10 +203,12 @@ option_wind = {
     },],
     legend: {
         show: true,
-        top: 'bottom',
-        right: 'right',
+        top: '70%',
+        right: "0%",
+        width: "0%",
         data: ['<0.5m/s', '0.5-2m/s', '2-4m/s'],
-        orient: 'vertical',
+        // orient: 'horizontal',
+
 
     }
 };
@@ -357,7 +407,7 @@ option3 = {
             lineStyle: {
                 normal: {
                     width: 3,
-                    color: '#CC0000',
+                    color: '#cc0000',
                 }
             },
             itemStyle: {
