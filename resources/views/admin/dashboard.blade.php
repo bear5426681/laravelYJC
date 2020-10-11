@@ -51,9 +51,10 @@
 {{--        margin-top: 40px--}}
     </div>
     <div class="col-lg-3 " id="xx" style="height: 300px">
-        <div class="bg-danger" style="height: 90%">
-            <div class="h3 "style=" padding-top: 10px;padding-left: 10px" >風力風向</div>
-
+        <div class=" text-center" style="height: 90%; ">
+            <div class="h3 "style=" padding-top: 10px" >風力風向</div>
+            <p class="m-0 h4" id="winddata">0m/s　　0°</p>
+<img src="{{ '/images/pngwing.png' }}" class="img-fluid" height="70%" width="70%">
         </div>
     </div>
     <div class="col-lg-3 " id="simple_opendata" style="height: 300px">
@@ -80,7 +81,7 @@
             success: function(allchartsdata) {
             response;
 
-                //console.log(allchartsdata)
+                console.log(allchartsdata)
                 temChart.setOption({ //重新載入數據
                     series: [{
                         data: [{ value:allchartsdata.temp_data, name: '氣溫' }],
@@ -91,12 +92,42 @@
                         data: [{value: allchartsdata.wet_data, name: ' 濕度'}],
                     }]
                 });
-                // windChart.setOption({
-                //     title: {
-                //      subtext: allchartsdata.wet_data.V11,
-                //
-                //     },
-                // });
+$('#winddata').text(allchartsdata.wind_data);
+                option2Chart.setOption({
+                xAxis: {
+                   data: allchartsdata.temp_data_time
+                } ,
+                series: [{
+
+                      data: allchartsdata.SO2
+                },
+                    {
+                       data: allchartsdata.NO2
+                    },
+
+                    {
+                        data: allchartsdata.O3
+                    },]}
+
+                );
+
+                option3Chart.setOption({
+                    xAxis: {
+                        data: allchartsdata.temp_data_time
+                    } ,
+                    series: [{
+
+                        data: allchartsdata.CO
+                    },
+
+
+                        {
+                            data: allchartsdata.CO2
+                        },]}
+
+                );
+
+
 
 
             },

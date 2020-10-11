@@ -401,7 +401,7 @@ return [
             'enable' => true,
     ],
         'login-captcha' => [
-            'enable' => true,
+            'enable' => false,
         ]
 ],
     //登入的框框會變透明
