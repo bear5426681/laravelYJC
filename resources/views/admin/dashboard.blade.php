@@ -50,8 +50,11 @@
     <div class="col-lg-3" id="wet" style="height: 300px;">
 {{--        margin-top: 40px--}}
     </div>
-    <div class="col-lg-3 " id="wind" style="height: 300px">
+    <div class="col-lg-3 " id="xx" style="height: 300px">
+        <div class="bg-danger" style="height: 90%">
+            <div class="h3 "style=" padding-top: 10px;padding-left: 10px" >風力風向</div>
 
+        </div>
     </div>
     <div class="col-lg-3 " id="simple_opendata" style="height: 300px">
 <div class="bg-danger" style="height: 90%">
@@ -88,6 +91,13 @@
                         data: [{value: allchartsdata.wet_data, name: ' 濕度'}],
                     }]
                 });
+                // windChart.setOption({
+                //     title: {
+                //      subtext: allchartsdata.wet_data.V11,
+                //
+                //     },
+                // });
+
 
             },
             error: function( errormessage) {

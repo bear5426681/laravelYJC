@@ -28,7 +28,6 @@
     <list default="true" id="cb60b01b-9b8d-4d1f-9a47-b0d1d40c0ec4" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/echarts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
     </list>
@@ -223,7 +222,7 @@
       <workItem from="1601263589004" duration="4813000" />
       <workItem from="1601274545161" duration="11470000" />
       <workItem from="1601432511072" duration="15082000" />
-      <workItem from="1602070108485" duration="25904000" />
+      <workItem from="1602070108485" duration="36606000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1601442002687</created>
@@ -239,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602126030987</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ajax二個數據成功">
+      <created>1602139421353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602139421353</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="start" />
     <MESSAGE value="首頁布置BI" />
-    <option name="LAST_COMMIT_MESSAGE" value="首頁布置BI" />
+    <MESSAGE value="ajax二個數據成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax二個數據成功" />
   </component>
   <component name="WindowStateProjectService">
     <state x="450" y="179" width="731" height="405" key="#CLI_Interpreters" timestamp="1601105676553">
@@ -286,19 +293,24 @@
     </state>
     <state x="2554" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601971286011" />
     <state x="618" y="164" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602071012784" />
-    <state x="2454" y="87" key="CommitChangelistDialog2" timestamp="1602126029327">
+    <state x="2454" y="87" width="621" height="924" key="CommitChangelistDialog2" timestamp="1602139420097">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2454" y="87" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602126029327" />
+    <state x="2454" y="87" width="621" height="924" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602139420097" />
     <state x="477" y="335" key="FileChooserDialogImpl" timestamp="1601225256413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="335" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601197118328" />
     <state x="477" y="335" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601225256413" />
-    <state x="543" y="137" key="NewPhpClassDialog" timestamp="1601198275178">
+    <state x="543" y="137" key="NewPhpClassDialog" timestamp="1602144500424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="543" y="137" key="NewPhpClassDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1601198275178" />
+    <state x="543" y="137" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1602144500424" />
+    <state x="610" y="335" key="NewPhpFileDialog" timestamp="1602144248905">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="610" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1602144248905" />
     <state x="541" y="132" key="RollbackChangesDialog" timestamp="1601966909931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -325,11 +337,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2695" y="337" width="370" height="357" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602136474303" />
-    <state x="2577" y="121" width="597" height="804" key="find.popup" timestamp="1602127214290">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="526" y="96" width="564" height="638" key="find.popup" timestamp="1602405959975">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2577" y="121" width="597" height="804" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602127214290" />
-    <state x="526" y="96" width="564" height="638" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601821689906" />
+    <state x="526" y="96" width="564" height="638" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1602405959975" />
     <state x="2672" y="378" key="scopes" timestamp="1602126742338">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

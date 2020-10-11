@@ -115,83 +115,83 @@ setInterval(getMessage, 1000);
 //</濕度>
 
 //<風向風力>
-    var windChart = echarts.init(document.getElementById('wind'));
-    option_wind = {
-        title: {
-            text: '風力風向',
-            subtext: '風向：342°  風力：0m/s',
-            left: 'center'
-        },
-        angleAxis: {
-
-            type: 'category',
-            center: ['25%', '50%'],
-            data: ['北', '', 'NE', '', '東', '', 'SE', '', '南', '', 'SW', '', '西', '', 'NW', ''],
-            z: 0,
-            boundaryGap: false,
-            splitLine: {
-                show: true,
-                lineStyle: {
-                    color: '#ddd',
-                    type: 'solid'
-                }
-            },
-            axisLine: {
-                show: false
-            }
-        },
-        radiusAxis: {},
-        //圓內外圈大小
-        polar: {
-            radius: ["0%", "60%"],
-            center: ["50%", "56%"],
-        },
-        series: [{
-            type: 'bar',
-            data: [0, 0, 0, 0, 0.62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            coordinateSystem: 'polar',
-            name: '<0.5m/s',
-            stack: 'a',
-            itemStyle: {
-                normal: {
-                    color: 'rgb(124, 181, 236)'
-                }
-            }
-        }, {
-            type: 'bar',
-            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            coordinateSystem: 'polar',
-            name: '0.5-2m/s',
-            stack: 'a',
-            itemStyle: {
-                normal: {
-                    color: 'rgb(67, 67, 72)'
-                }
-            }
-        }, {
-            type: 'bar',
-            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            coordinateSystem: 'polar',
-            name: '2-4m/s',
-            stack: 'a',
-            itemStyle: {
-                normal: {
-                    color: 'rgb(144, 237, 125)'
-                }
-            }
-        },],
-        legend: {
-            show: true,
-            top: '70%',
-            right: "0%",
-            width: "0%",
-            data: ['<0.5m/s', '0.5-2m/s', '2-4m/s'],
-            // orient: 'horizontal',
-
-
-        }
-    };
-    windChart.setOption(option_wind);
+//     var windChart = echarts.init(document.getElementById('wind'));
+//     option_wind = {
+//         title: {
+//             text: '風力風向',
+//             subtext: '風向：342°  風力：0m/s',
+//             left: 'center'
+//         },
+//         angleAxis: {
+//
+//             type: 'category',
+//             center: ['25%', '50%'],
+//             data: ['北', '', 'NE', '', '東', '', 'SE', '', '南', '', 'SW', '', '西', '', 'NW', ''],
+//             z: 0,
+//             boundaryGap: false,
+//             splitLine: {
+//                 show: true,
+//                 lineStyle: {
+//                     color: '#ddd',
+//                     type: 'solid'
+//                 }
+//             },
+//             axisLine: {
+//                 show: false
+//             }
+//         },
+//         radiusAxis: {},
+//         //圓內外圈大小
+//         polar: {
+//             radius: ["0%", "60%"],
+//             center: ["50%", "56%"],
+//         },
+//         series: [{
+//             type: 'bar',
+//             data: [0, 0, 0, 0, 0.62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+//             coordinateSystem: 'polar',
+//             name: '<0.5m/s',
+//             stack: 'a',
+//             itemStyle: {
+//                 normal: {
+//                     color: 'rgb(124, 181, 236)'
+//                 }
+//             }
+//         }, {
+//             type: 'bar',
+//             data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+//             coordinateSystem: 'polar',
+//             name: '0.5-2m/s',
+//             stack: 'a',
+//             itemStyle: {
+//                 normal: {
+//                     color: 'rgb(67, 67, 72)'
+//                 }
+//             }
+//         }, {
+//             type: 'bar',
+//             data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+//             coordinateSystem: 'polar',
+//             name: '2-4m/s',
+//             stack: 'a',
+//             itemStyle: {
+//                 normal: {
+//                     color: 'rgb(144, 237, 125)'
+//                 }
+//             }
+//         },],
+//         legend: {
+//             show: true,
+//             top: '70%',
+//             right: "0%",
+//             width: "0%",
+//             data: ['<0.5m/s', '0.5-2m/s', '2-4m/s'],
+//             // orient: 'horizontal',
+//
+//
+//         }
+//     };
+//     windChart.setOption(option_wind);
 //</風向風力>
 
 //<氣體1>

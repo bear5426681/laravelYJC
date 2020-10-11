@@ -26,9 +26,12 @@ class HomeController extends Controller
         $temp_data = alldata::orderBy( 'pk', 'DESC' )->pluck( 'V6' )->first();
 //        $temp_data = json_decode( $temp_data);
         $wet_data = alldata::orderBy( 'pk', 'DESC' )->pluck( 'V7' )->first();
+        $wind_data = alldata::orderBy( 'pk', 'DESC' )->pluck( 'V11','V12' )->first();
+        $wind_data = alldata::select('V11', 'V12')->orderBy( 'pk', 'DESC' )->get()->first();
         $allchartsdata = array(
             'temp_data'=>$temp_data,
             'wet_data'=>$wet_data,
+            'wind_data'=>$wind_data,
         );
         return  $allchartsdata;
 //return  response()->json($allchartsdata);
