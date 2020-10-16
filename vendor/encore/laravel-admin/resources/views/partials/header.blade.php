@@ -1,3 +1,4 @@
+@php($survival_num=survival_num()['survival_num'])
 <!-- Main Header -->
 <header class="main-header">
 
@@ -25,7 +26,7 @@
             <ul class="nav navbar-nav">
                 <li>
                     <a href="javascript:void(0);" class="container-refresh">
-                        <b style="font-size: 14px">當前雞隻：10023隻</b>
+                        <b style="font-size: 14px">當前雞隻：{{$survival_num}}隻</b>
 {{--                        <i class="fa fa-refresh"></i>這個長這樣{!! Admin::getNavbar()->render() !!}這個長這樣--}}
                     </a>
                 </li>

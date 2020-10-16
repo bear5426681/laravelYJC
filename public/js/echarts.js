@@ -1,22 +1,4 @@
 
-setInterval(getMessage, 1000);
-//
-//
-// ajaxGetPostMonthlyData: function() {
-//     var urlPath =  'http://' + window.location.hostname + '/get-post-chart-data';
-//     var request = $.ajax( {
-//         method: 'GET',
-//         cache: false,
-//         url: urlPath
-//     } );
-//
-//     request.done( function ( response ) {
-//         console.log( response );
-//
-//
-//
-//     });
-// };
 
 
 //<溫度>
@@ -400,3 +382,5 @@ setInterval(getMessage, 1000);
         ]
     };
     option3Chart.setOption(option3);
+
+

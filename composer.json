@@ -17,7 +17,8 @@
         "laravel-admin-ext/chartjs": "^1.0",
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "2.4"
+        "laravel/ui": "2.4",
+      "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -43,6 +44,9 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+        ],
+        "files":[
+            "app/helper/publicFunction.php"
         ]
     },
     "autoload-dev": {
